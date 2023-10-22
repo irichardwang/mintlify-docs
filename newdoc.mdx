@@ -1,1 +1,33 @@
+## My New Note
 
+<Info>This is an example of a reusable snippet</Info>
+
+
+<CodeGroup>
+
+```bash npm
+npm i -g mintlify
+```
+
+```bash yarn
+yarn global add mintlify
+```
+
+</CodeGroup>
+
+
+```python
+def gd(lr = 0.02, itera_times = 20, w = 10):
+    """
+    梯度下降计算函数
+    :param lr: 学习率
+    :param itera_times：迭代次数
+    :param w：参数初始取值
+    :return results：每一轮迭代的参数计算结果列表
+    """                              
+    results = [w]
+    for i in range(itera_times):
+        w -= lr * 28 * (w - 2)            # 梯度计算公式
+        results.append(w)
+    return results
+```
